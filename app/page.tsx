@@ -21,17 +21,18 @@ export default function Home() {
               <feDisplacementMap in="SourceGraphic" scale="2" />
             </filter>s
           </svg>
-          <h1 className="text-[9rem] text-[#68481c] tracking-tight leading-tight">
+          <h1 className="text-[9rem] text-[#68481c] tracking-tight leading-35">
             Dockyard.
           </h1>
-          <h2 className="text-5xl text-[#856436] italic">
-            Some really cool and thoughtful tagline
+          <h2 className="text-5xl text-[#856436] italic ">
+            A monthly space for the quietly obsessed.
           </h2>
           <p className="max-w-3xl text-lg text-black tracking-tight font-mono">
-            blach blah Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat.
+            Dockyard is a monthly deep-work meetup for people who are seriously engaged in their own
+            projects, across disciplines. We spend most of the afternoon working quietly together, 
+            with time for conversation, short demos, and an optional dinner afterwards. The goal is
+            not networking or starting something new every month, but making steady progress on 
+            work you already care deeply about, alongside people you would not normally meet.
           </p>
           <div className="font-medium font-mono mb-28">
             <a
