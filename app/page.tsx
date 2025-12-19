@@ -31,7 +31,7 @@ export default function Home() {
             Dockyard is a monthly deep-work meetup for people who are seriously engaged in their own
             projects, across disciplines. We spend most of the afternoon working quietly together, 
             with time for conversation, short demos, and an optional dinner afterwards. The goal is
-            not networking or starting something new every month, but making steady progress on 
+            not just networking or starting something new every month, but making steady progress on 
             work you already care deeply about, alongside people you would not normally meet.
           </p>
           <div className="font-medium font-mono mb-28">
