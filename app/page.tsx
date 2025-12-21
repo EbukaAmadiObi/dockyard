@@ -33,13 +33,13 @@ export default function Home() {
               <feDisplacementMap in="SourceGraphic" scale="2" />
             </filter>
           </svg>
-          <h1 className="text-[13vh] text-[#68481c] tracking-tight leading-[10svh]">
+          <h1 className="text-[10vh] sm:text-[13vh] text-[#68481c] tracking-tight leading-[10svh]">
             Dockyard.
           </h1>
-          <h2 className="text-[5vh] text-[#856436] italic ">
+          <h2 className="text-[4vh] sm:text-[5vh] text-[#856436] italic ">
             A monthly space for the quietly obsessed.
           </h2>
-          <p className="text-[2vh] max-w-3xl text-lg text-black tracking-tight font-mono">
+          <p className="max-w-3xl text-black tracking-tight font-mono">
             Dockyard is a monthly deep-work meetup for people who are seriously engaged in their own
             projects, across disciplines. We spend most of the afternoon working quietly together, 
             with time for conversation and short demos. The goal is not just networking or starting 
