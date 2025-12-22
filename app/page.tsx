@@ -52,8 +52,8 @@ export default function Home() {
       <picture>
         <source
           media="(min-width:640px)"
-          type="image/png"
-          srcSet="/stripes.png"
+          type="image/avif"
+          srcSet="/stripes.avif"
         />
 
         <source
@@ -62,7 +62,7 @@ export default function Home() {
         />
 
         <img
-          src="/stripes.png"
+          src="/stripes.avif"
           className="absolute top-[2.5%] sm:top-1/2 left-0 sm:-translate-y-1/2 sm:h-svh w-svw sm:w-auto object-cover pointer-events-none"
           alt="Hero illustration"
           loading="lazy"
