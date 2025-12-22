@@ -72,6 +72,10 @@ export default function Home() {
       <main className="flex flex-col items-center justify-center h-svh">
         <div className="absolute top-0 left-0 h-svh w-[10%] sm:w-[20%]  bg-linear-to-r from-[#d6cdc2] to-[#d6cdc200] z-10"></div>
         <div className="absolute top-0 right-0 h-svh w-[10%] sm:w-[20%] bg-linear-to-r from-[#d6cdc200] to-[#d6cdc2] z-10"></div>
+        
+        <div className="absolute bottom-0 right-0 z-20 p-5 font-mono text-sm">
+          <span>Made possible by</span> <a href="https://www.giveago.co/" className="text-[#501ea0] font-bold">Give(a)Go</a>
+        </div>
         <motion.div
           className="flex flex-col items-center gap-5 sm:gap-7 z-20 mx-10"
           variants={contentVariants}
