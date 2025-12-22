@@ -8,6 +8,11 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const imgRef = useRef<HTMLImageElement | null>(null);
 
+  const contentVariants = {
+    hidden: { opacity: 0.2, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  } as const;
+
   useEffect(() => {
     const img = imgRef.current;
     if (!img) return;
@@ -67,12 +72,11 @@ export default function Home() {
       <main className="flex flex-col items-center justify-center h-svh">
         <div className="absolute top-0 left-0 h-svh w-[10%] sm:w-[20%]  bg-linear-to-r from-[#d6cdc2] to-[#d6cdc200] z-10"></div>
         <div className="absolute top-0 right-0 h-svh w-[10%] sm:w-[20%] bg-linear-to-r from-[#d6cdc200] to-[#d6cdc2] z-10"></div>
-        <motion.div className="flex flex-col items-center gap-5 sm:gap-7 z-20 mx-10"
-          initial={{ opacity: 0.2, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ 
-            duration: .5
-          }}
+        <motion.div
+          className="flex flex-col items-center gap-5 sm:gap-7 z-20 mx-10"
+          variants={contentVariants}
+          initial="hidden"
+          animate={loading ? "hidden" : "visible"}
         >
           <h1 className="text-[9vh] sm:text-[13vh] text-[#68481c] tracking-tight leading-[7svh] sm:leading-[10svh] mt-10">
             Dockyard.
