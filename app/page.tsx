@@ -73,7 +73,7 @@ export default function Home() {
         <div className="absolute top-0 left-0 h-svh w-[10%] sm:w-[20%]  bg-linear-to-r from-[#d6cdc2] to-[#d6cdc200] z-10"></div>
         <div className="absolute top-0 right-0 h-svh w-[10%] sm:w-[20%] bg-linear-to-r from-[#d6cdc200] to-[#d6cdc2] z-10"></div>
         
-        <div className="absolute bottom-0 right-0 z-20 p-5 font-mono text-sm">
+        <div className="absolute bottom-0 right-0 z-20 p-5 font-mono text-[10px] md:text-sm">
           <span>Made possible by</span> <a href="https://www.giveago.co/" className="text-[#501ea0] font-bold">Give(a)Go</a>
         </div>
         <motion.div
