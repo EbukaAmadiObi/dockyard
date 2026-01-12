@@ -99,11 +99,11 @@ export default function Home() {
           <div className="font-medium font-mono sm:mb-22">
             <a
               className="flex h-12 w-full mt-5 text-[#d6cdc2] font-bold items-center rounded-full bg-[#7d7f48] px-5 text-foreground transition-colors hover:bg-[#55572c] "
-              href="https://luma.com/5a1sost8"
+              href="https://luma.com/Dockyard"
               target="_blank"
               rel="noopener noreferrer"
             >
-              APPLY TO JOIN
+              CHECK IT OUT
             </a>
           </div>
         </motion.div>
