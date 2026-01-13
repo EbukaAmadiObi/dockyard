@@ -34,6 +34,18 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    // Dynamically load the external script
+    const script = document.createElement("script");
+    script.src = "https://eomail5.com/form/969825da-ef08-11f0-a1ac-310705f6e9c4.js";
+    script.async = true;
+    script.setAttribute("data-form", "969825da-ef08-11f0-a1ac-310705f6e9c4");
+    const container = document.getElementById("eomail-form-container");
+    if (container) {
+      container.appendChild(script);
+    }
+  }, []);
+
   return (
     <div className="page-overlay flex flex-col bg-[#d6cdc2] font-sans h-svh">
       {loading && (
@@ -89,22 +101,24 @@ export default function Home() {
             A monthly space for the quietly obsessed.
           </h2>
                     
-          <p className="text-[14px] sm:text-[18px] max-w-3xl text-black tracking-tight font-mono">
+          <p className="text-[14px] sm:text-[18px] max-w-3xl sm:max-w-4xl text-black tracking-tight font-mono">
             Dockyard is a monthly deep-work meetup for people who are seriously engaged in their own
             projects, across disciplines. We spend most of the afternoon working quietly together, 
             with time for conversation and short demos. The goal is not just networking or starting 
             something new every month, but making steady progress on work you already care deeply 
             about, alongside people you would not normally meet.
           </p>
-          <div className="font-medium font-mono sm:mb-22">
+          <div className="font-medium font-mono sm:mb-22 flex flex-col gap-6 sm:flex-row">
+            <div id="eomail-form-container" />
             <a
-              className="flex h-12 w-full mt-5 text-[#d6cdc2] font-bold items-center rounded-full bg-[#7d7f48] px-5 text-foreground transition-colors hover:bg-[#55572c] "
-              href="https://luma.com/Dockyard"
+              className="flex h-10 w-44 mt-3.75 text-white font-bold justify-center items-center rounded-sm bg-[#7d7f48] px-5 text-foreground transition-colors hover:bg-[#55572c] "
+              href="https://mirror-ladybug-8f7.notion.site/2e78ef702b5e800e83d6d4d017cec2a5?pvs=105"
               target="_blank"
               rel="noopener noreferrer"
             >
-              CHECK IT OUT
+              Apply to Join
             </a>
+            
           </div>
         </motion.div>
       </main>
