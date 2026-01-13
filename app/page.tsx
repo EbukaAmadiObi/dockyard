@@ -101,14 +101,14 @@ export default function Home() {
             A monthly space for the quietly obsessed.
           </h2>
                     
-          <p className="text-[14px] sm:text-[18px] max-w-4xl text-black tracking-tight font-mono">
+          <p className="text-[14px] sm:text-[18px] max-w-3xl sm:max-w-4xl text-black tracking-tight font-mono">
             Dockyard is a monthly deep-work meetup for people who are seriously engaged in their own
             projects, across disciplines. We spend most of the afternoon working quietly together, 
             with time for conversation and short demos. The goal is not just networking or starting 
             something new every month, but making steady progress on work you already care deeply 
             about, alongside people you would not normally meet.
           </p>
-          <div className="font-medium font-mono sm:mb-22 flex flex-row gap-6">
+          <div className="font-medium font-mono sm:mb-22 flex flex-col gap-6 sm:flex-row">
             <div id="eomail-form-container" />
             <a
               className="flex h-10 w-44 mt-3.75 text-white font-bold justify-center items-center rounded-sm bg-[#7d7f48] px-5 text-foreground transition-colors hover:bg-[#55572c] "
